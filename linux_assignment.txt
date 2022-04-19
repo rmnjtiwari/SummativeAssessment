@@ -1,0 +1,50 @@
+Github link: - "https://github.com/rmnjtiwari/SummativeAssessment"
+
+
+
+
+Linux Assignment
+
+1. Search for a pattern (sample) in all the files/subdirectories from current directory.
+Ans:-
+$ grep “pattern” * -r
+
+2. Count the no. of directories / sub directories in current directory.
+Ans:-
+$ echo */ | wc
+
+3. Display day of week for a given date. (ddmmyyyy). 
+Ans:- 
+$ date –date=”09/10/1960”
+
+4. Display contents of all .lst files in the current directory.
+Ans:-
+$ cat *.lst -r
+
+5. For a student file with the following fields, Roll-no, name, marks. Generate 2 files a) 'Pass' and b) Fail containing records of student who have passed or failed. Also count the number of students who have passed or failed.
+Ans:-
+$ touch Pass
+$ touch Fail
+
+6. Accept a date string from terminal and display the employees born after the input date.
+Ans:-
+
+7. Find the number of employees belonging to a particular department specified by user.
+Ans:-
+$ select count(employee) from employees where department = department_specified;
+
+8. Find the count of people in each dept. of the employee file.
+Ans:-
+$ select count(employee) group by department;
+
+9. Generate a list of S.E. who earn more than the amount specified by the user.
+Ans:-
+$ select * from employees where department = S.E. and salary > variable;
+
+10. View the employee records in order of designations.
+Ans:-
+$ select * from employees order by designations;
+
+11. List employee details of all employees who earn more than the average salary of all employees.
+Ans:-
+select * from employees where salary > avg(salary);
